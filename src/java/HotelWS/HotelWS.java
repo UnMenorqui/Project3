@@ -80,6 +80,7 @@ public class HotelWS {
     @WebMethod(operationName = "consulta_libres")
     public int consulta_libres(@WebParam(name = "id_hotel") int id_hotel, @WebParam(name = "fecha") int fecha) {
         //TODO write your implementation code here:
+        
         return 0;
     }
 

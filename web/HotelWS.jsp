@@ -10,19 +10,38 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Hotel </title>
-    </head>
+
     <body>
-        </div>
-                    <label for="id_hotel"> Identificador de Hotel</label>
-                    <br/>
-                    <input type="text" name="id_hotel" required />
-                    <br/>
-                    <label for="fecha"> Fecha </label>
-                    <br/>
-                    <input type="text" name="fecha" required/>
-                    <br/>
-                    <button type="submit">Consulta Habitaciones Libres</button>
-                    <br/>
-        <div/>
-    </body>
+        <h1>Hotel WS</h1>
+
+        <form method="POST">Consultar plazas libres<br>
+            <div>
+                <label for="id_hotel"> Identificador de Hotel: </label>
+                <input type="TEXT" name="PARAMconsultaLibres0" title="consultaLibres parameter of type int"> <br/><br/>
+            </div>
+
+            <div>
+                <label for="fecha"> Fecha: </label>
+                <input type="TEXT" name="PARAMconsultaLibres1" title="consultaLibres parameter of type int"><br/><br/>
+            </div>
+            <input type="SUBMIT" name="action" title="Invoke consultaLibres operation" value="consultaLibres">
+
+            <br/><br/><br/>
+            <form method="POST"> Reservar Habitación<br>
+                <div>
+                    <label for="id_hotel"> Identificador de Hotel: </label>
+                    <input type="TEXT" name="PARAMreservaHabitacion0" title="reservaHabitacion parameter of type int"><br/><br/>
+                </div>
+
+                <div>
+                    <label for="fecha"> Fecha: </label>
+                    <input type="TEXT" name="PARAMreservaHabitacion1" title="reservaHabitacion parameter of type int"><br/><br/>
+                </div>
+                <input type="SUBMIT" name="action" title="Invoke reservaHabitacion operation" value="reservaHabitacion">
+
+                <br></form></body>
+</head>
+
 </html>
+
+
